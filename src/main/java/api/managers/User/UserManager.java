@@ -53,7 +53,7 @@ public class UserManager {
 
 	
 	///POTEZNE SYNC 
-	public static void LoadPlayerData(final String player) {
+	public  void LoadPlayerData(final String player) {
 		final Long startTime = System.currentTimeMillis();
 		final User u = UserManager.getUser(player);
 		if (Config.OTHER_debug) {
@@ -105,7 +105,7 @@ public class UserManager {
 	}
 
 
-	public static void LoadPlayerData(final Player p) {
+	public  void LoadPlayerData(final Player p) {
 		final Long startTime = System.currentTimeMillis();
 		final User u = UserManager.getUser(p);
 		if (Config.OTHER_debug) {
@@ -157,7 +157,7 @@ public class UserManager {
 
 	}
 
-	public static void loadUsers() {
+	public  void loadUsers() {
 		try {
 		final ResultSet rs = Database.query("SELECT * FROM `users`");
 		while (rs.next()) {
@@ -181,7 +181,7 @@ public class UserManager {
 		}
 	}
 
-	public static void deleteUser(final User u) {
+	public  void deleteUser(final User u) {
 	UserManager.users.remove(u.getName());
 	KillManager.removeKill(u);
 	DeathManager.removeDeath(u);
