@@ -90,7 +90,7 @@ public class core extends JavaPlugin {
 	}
     
     
-    public static core getPlugin() {
+    public core getPlugin() {
         return core.plugin;
     }
 
@@ -176,7 +176,8 @@ public class core extends JavaPlugin {
           }
 
     public void registerManager() {
-       UserManager.loadUsers();
+       
+        UserManager.loadUsers();
     }
     
     private void registerDatabase() {
@@ -194,7 +195,7 @@ public class core extends JavaPlugin {
 			final ClassPath cp = ClassPath.from(getClass().getClassLoader());
 			PluginManager manager = Bukkit.getPluginManager();
 
-			for (ClassInfo classInfo : cp.getTopLevelClassesRecursive("pl.samuel.randomtp.listeners")) {
+			for (ClassInfo classInfo : cp.getTopLevelClassesRecursive("pl.textr.randomtp.listeners")) {
 				Class<?> listenerClass = classInfo.load();
 				Listener listener = new Listener() {
 				};
@@ -212,7 +213,7 @@ public class core extends JavaPlugin {
 		}
 	}
 
-public static void registerCommand(final Command command) {
+public void registerCommand(final Command command) {
     CommandManager.register(command);
 }
 
