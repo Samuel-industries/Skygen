@@ -122,6 +122,7 @@ public class ArenaListener implements Listener  {
 	event.getBlock();
 	event.setCancelled(true);
 	}
+	@EventHandler
 	public void onWeather(WeatherChangeEvent e) {
 	World ew = e.getWorld();
 	if (ew.hasStorm()) {
