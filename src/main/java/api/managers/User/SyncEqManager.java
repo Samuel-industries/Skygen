@@ -25,7 +25,7 @@ import pl.samuel.skygen.utils.PotionUtil;
 
 public class SyncEqManager {
 
-	public static void saveDataPlayer (final Player p) {
+	public void saveDataPlayer (final Player p) {
 	final Long startTime = System.currentTimeMillis();
 	if (Config.OTHER_debug) {
 	Logger.warning("Trwa zapisywanie " + p.getName());
@@ -44,7 +44,7 @@ public class SyncEqManager {
 	}
 	
 
-	public static void downloadPlayerInfo(final Player p) {
+	public void downloadPlayerInfo(final Player p) {
 	final Long startTime = System.currentTimeMillis();
 	if (Config.OTHER_debug) {
 	Logger.warning("ladowanie danych gracza " + p.getName());
