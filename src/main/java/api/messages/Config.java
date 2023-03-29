@@ -59,7 +59,7 @@ public class Config
         Config.DATABASE_MYSQL_PORT = 3306;
         Config.DATABASE_MYSQL_USER = "root";
         Config.DATABASE_MYSQL_PASS = "haslo";
-        Config.DATABASE_MYSQL_NAME = "grupowe?useSSL=false";  
+        Config.DATABASE_MYSQL_NAME = "skygen?useSSL=false";  
 
         
    ///chat
