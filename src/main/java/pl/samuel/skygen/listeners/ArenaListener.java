@@ -118,7 +118,7 @@ public class ArenaListener implements Listener  {
 		}
 	}
 	@EventHandler
-	public static void onBlockPhysic(final BlockPhysicsEvent event) {
+	public void onBlockPhysic(final BlockPhysicsEvent event) {
 	event.getBlock();
 	event.setCancelled(true);
 	}
