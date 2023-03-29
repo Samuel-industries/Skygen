@@ -62,7 +62,7 @@ public class PlayerCommandPreprocessListener implements Listener {
 	}
 
 
-	static boolean containsIgnoreCase(final String[] board, final String string) {
+	public boolean containsIgnoreCase(final String[] board, final String string) {
 		for (final String otherstring : board) {
 			if (otherstring.equalsIgnoreCase(string)) {
 				return true;
@@ -71,7 +71,7 @@ public class PlayerCommandPreprocessListener implements Listener {
 		return false;
 	}
 
-	public static boolean containsIgnoreCase(final List<String> board, final String string) {
+	public boolean containsIgnoreCase(final List<String> board, final String string) {
 		for (final String otherstring : board) {
 			if (otherstring.equalsIgnoreCase(string)) {
 				return true;
