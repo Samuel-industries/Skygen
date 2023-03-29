@@ -90,7 +90,7 @@ public class core extends JavaPlugin {
 	}
     
     
-    public core getPlugin() {
+   public static core getPlugin() {
         return core.plugin;
     }
 
