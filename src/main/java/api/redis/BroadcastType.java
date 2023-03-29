@@ -1,0 +1,18 @@
+package api.redis;
+
+public enum BroadcastType {
+
+    CHAT,
+    TITLE,
+    ACTIONBAR,
+    SUBTITLE,
+    DISPATCH_COMMAND,
+    TURBOCOINS_CHAT,
+    TURBOCOINS_ACTIONBAR,
+    TURBOVOUCHERY_CHAT,
+    TURBOVOUCHERY_ACTIONBAR,
+    GALERT_TITLE,
+    GALERT_CHAT,
+    GALERT_ACTIONBAR,
+
+}
