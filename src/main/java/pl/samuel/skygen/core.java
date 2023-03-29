@@ -194,7 +194,7 @@ public class core extends JavaPlugin {
 			final ClassPath cp = ClassPath.from(getClass().getClassLoader());
 			PluginManager manager = Bukkit.getPluginManager();
 
-			for (ClassInfo classInfo : cp.getTopLevelClassesRecursive("pl.textr.randomtp.listeners")) {
+			for (ClassInfo classInfo : cp.getTopLevelClassesRecursive("pl.samuel.randomtp.listeners")) {
 				Class<?> listenerClass = classInfo.load();
 				Listener listener = new Listener() {
 				};
