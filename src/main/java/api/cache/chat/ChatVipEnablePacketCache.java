@@ -14,7 +14,7 @@ public class ChatVipEnablePacketCache implements PacketListener<ChatVipEnablePac
         System.out.println("dodano message do cache");
         String content = packet.getContent();
         Config.ENABLE_VIPCHAT = true;
-        
+        Config.save();
         Bukkit.broadcastMessage(ChatUtil.fixColor(content));            
     }
 }
