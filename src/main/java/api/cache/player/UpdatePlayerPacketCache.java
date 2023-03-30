@@ -12,7 +12,6 @@ public class UpdatePlayerPacketCache implements PacketListener<UpdatePlayerPacke
         System.out.println("dodano message do cache");
         String content = packet.getContent(); 
         final User u = UserManager.getUser(content);
-        u.save();
         UserManager.LoadPlayerData(content);  
     }
 }
