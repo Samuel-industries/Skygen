@@ -25,15 +25,16 @@ public class PlayerQuitJoinListener implements Listener {
 		final Player p = e.getPlayer();
 		UserManager.LoadPlayerData(p);
 		e.setJoinMessage(null);
-		p.updateInventory();
 		p.setGameMode(GameMode.SURVIVAL);
 		SyncEqManager.downloadPlayerInfo(p);	
 	    CorePlayer user = corePlayerCache.findByPlayer(p);
 	    if (user == null) {
 	    user = new CorePlayer(p.getUniqueId(), p.getName());
 	    corePlayerCache.add(user);
+	   if (Config.OTHER_debug) {
 	    System.out.println("dodano usera cache");
 	        }
+	    }
 	        
 	    }
 
