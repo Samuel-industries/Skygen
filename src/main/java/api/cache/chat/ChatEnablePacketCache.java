@@ -14,6 +14,7 @@ public class ChatEnablePacketCache implements PacketListener<ChatEnablePacket> {
         System.out.println("dodano message do cache");
         String content = packet.getContent();
         Config.ENABLE_CHAT = true;
+        Config.save();
         Bukkit.broadcastMessage(ChatUtil.fixColor(content));            
     }
 }
