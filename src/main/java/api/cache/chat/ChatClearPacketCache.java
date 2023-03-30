@@ -12,9 +12,9 @@ public class ChatClearPacketCache implements PacketListener<ChatClearPacket> {
     public void handle(ChatClearPacket packet) {
         System.out.println("dodano message do cache");
         String content = packet.getContent();
-        Bukkit.broadcastMessage(ChatUtil.fixColor(content));
         for (int i = 0; i < 100; ++i) {
             Bukkit.getServer().broadcastMessage("");
       }
+      Bukkit.broadcastMessage(ChatUtil.fixColor(content));
     }
 }
