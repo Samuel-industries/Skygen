@@ -33,8 +33,8 @@ public class AsyncPlayerChatListener implements Listener
    final Collection<Group> inheritedGroups = lpuser.getInheritedGroups(lpuser.getQueryOptions());
    final User u = UserManager.getUser(p);
    final String prefix = lpuser.getCachedData().getMetaData().getPrefix();
-   if (e.getMessage().length() < 2) {
-   ChatUtil.sendMessage(p, "&8[&C&l!&8] &cWiadomosc musi zawierac minimalnie 2 znaki");
+   if (e.getMessage().length() < 1) {
+   ChatUtil.sendMessage(p, "&8[&C&l!&8] &cWiadomosc musi zawierac minimalnie 1 znak");
    e.setCancelled(true);
    return;
         }
